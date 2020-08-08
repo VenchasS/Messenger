@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f0f0;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.logo{
+    display: block;
+
+}
+.header{
+    display: flex;
+    background-color: #c7660c;
+    height: 50px;
+    font-family: 'Roboto';
+    font-size: 25px;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 1px solid darkslategray;
+
+    width: 100%;
+}
+.active{
+    color: orange;
+}
+.header .logo{
+    margin-right: 25px;
+}
+.header a:hover{
+    color: #fff;
+    transition: color .3s;
+}
+
+.header a {
+    margin-left: 10px;
+}
+.Body{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.Navbar {
+    padding: 50px 35px 0 35px;
+    
+}
+.Navbar::after{
+    display: block;
+    content: '';
+    width: 75px;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.BtnNavBar{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 0 10px;
+    
+    border-radius: 3px;
+}
+
+.BtnNavBar:hover{
+    background-color: #e09e5f;
+    
+   
+    transition: background-color .3s;
+    cursor: pointer;  
+}
+.Content{
+    margin: 0 15px;
+    padding: 50px 10% 0 10%;
+}
+NavLink{
+    color: black;
+}
+.logout{
+  margin-left: auto;
+  cursor: pointer;
+}

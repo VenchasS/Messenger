@@ -1,0 +1,147 @@
+
+
+.FindUserWindow{
+    width: 100%;
+    height: 100%;
+}
+.FindUsersInput
+{
+    height: 100%;
+    width: 85%;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    border: 0;
+    border-radius: 3px;
+}
+.FindUsersInputWindow{
+    height: 40px;
+}
+.FindUsersInputWindow button{
+    width: 15%;
+    height: 100%;
+    margin: 0;
+    font-size: 20px;
+}
+.TypicalFriend{
+    
+    height: 50px;
+    
+    border-radius: 3px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+}
+.SearchFriendBlock {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.followButton{
+    min-width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 25px;
+}
+.blabla{
+    width: 90%;
+    margin-left: 5%;
+    background-color: #f0a45d;
+    border-radius: 3px;
+    padding: 3px 15px;
+}
+.redbgc{
+    background-color: #f24b4b;
+}
+.greenbgc{
+    background-color: #5ee53c;
+}
+.MoreButton{
+    background-color: #3c93e5;
+    border: 0;
+    outline: none;
+    width: 7%;
+    height: 35px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.MoreButtonDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+.MoreButton:active{
+    background-color: #3ce580;
+    transition: background-color .2s;
+}
+.circle{
+    border-radius: 55%;
+}
+.rotating{
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes rotate {
+    from { 
+      transform: rotate(0deg); 
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  .FindUsersresultate{
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+  }
+  .loader{
+      margin-top: 50px;
+  }
+  .lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .TypicalFriend a{
+    width: 50px;
+  }
